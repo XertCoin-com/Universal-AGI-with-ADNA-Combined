@@ -1,0 +1,8 @@
+cryptography
+pydantic
+pynacl
+requests
+aiohttp
+uvicorn
+fastapi
+ipfshttpclient==0.8.0a2
