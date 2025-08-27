@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ADNA",
+  "type": "object",
+  "properties": {
+    "model_id": {
+      "type": "string"
+    },
+    "parent_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "version": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "traits": {
+      "type": "object"
+    },
+    "training": {
+      "type": "object",
+      "properties": {
+        "datasets_commit": {
+          "type": "string"
+        },
+        "steps": {
+          "type": "integer"
+        },
+        "hyperparams": {
+          "type": "object"
+        },
+        "logs_commit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "datasets_commit",
+        "steps"
+      ]
+    },
+    "fitness": {
+      "type": "object",
+      "properties": {
+        "accuracy": {
+          "type": "number"
+        },
+        "speed": {
+          "type": "number"
+        },
+        "energy": {
+          "type": "number"
+        },
+        "cost": {
+          "type": "number"
+        },
+        "composite": {
+          "type": "number"
+        }
+      }
+    },
+    "zk_proof": {
+      "type": "string"
+    },
+    "signer": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "model_id",
+    "version",
+    "created_at",
+    "training"
+  ]
+}
