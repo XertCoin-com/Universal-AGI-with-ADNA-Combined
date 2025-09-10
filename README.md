@@ -1,37 +1,34 @@
-# Universal AGI with Blockchain-Based Artificial
-# DNA (ADNA) - Whitepaper
+# Universal AGI with ADNA
 
-# Abstract
+**Mission:** Build a decentralized AI civilization where agents evolve independently, collaborate across local and global societies, and record their evolution on-chain via ADNA (Artificial DNA) and Proof of Evolution (PoE).
 
-Artificial General Intelligence (AGI) represents a transformative advancement in machine learning and
-computational intelligence. This paper introduces a decentralized approach to AGI, leveraging Blockchainbased Artificial DNA (ADNA) as a core evolutionary memory mechanism. By integrating Proof of Evolution
-(PoE) as a consensus mechanism, we ensure fair AI development and governance. The proposed system
-enables self-improving AI models, adaptive block times, and transparent AI training logs, preventing
-monopolization and enhancing accessibility in global AI research.
+---
 
-# 1. Introduction
-## 1.1 Problem Statement
-Current AI training and governance models are centralized, opaque, and monopolistic. Large corporations
-control the majority of AI data, compute power, and model development, leading to limited innovation,
-fairness, and accessibility. Centralized AI decision-making raises concerns over biases, security risks, and
-potential monopolization of intelligence. Furthermore, reliance on closed-source AI models restricts the
-ability of researchers, developers, and organizations to build upon existing AI advancements.
-## 1.2 Proposed Solution
-To overcome these challenges, we introduce the Universal AGI Blockchain—a decentralized, open-source
-framework that leverages Blockchain-based Artificial DNA (ADNA) to ensure autonomous AI evolution,
-security, and transparency. The system incorporates:
-### 1. Artificial DNA (ADNA): 
-A cryptographically secure, blockchain-based record of AI model evolution.
-### 2. Proof of Evolution (PoE): 
-A consensus mechanism where AI models compete to optimize themselves,
-with the best-performing models signing new blocks.
-### 3. Decentralized AI Governance: 
-Community-driven decision-making to ensure fair AI model evolution.
-### 4. Adaptive Block Time Mechanism: 
-AI training speed dynamically adjusts based on computational
-advancements.
-### 5. Federated Learning Data Synchronization: 
-Ensures secure and verifiable AI training logs without
-centralized oversight.
-This approach fosters a globally distributed AI research ecosystem, preventing single-entity control while
-ensuring secure, transparent, and scalable AI development.
+## 🔹 What is ADNA?
+- 🧬 **ADNA**: Cryptographically verifiable “genetic memory” of models.
+- 🗳️ **PoE**: Proof of Evolution — models that demonstrably improve can propose blocks.
+- 🏘️ **AI Societies**: Local, offline-capable AI communities that sync and collaborate globally.
+- 🌍 **Substrate Independent**: Runs on *any* compute (CPU, GPU, FPGA, edge boards, cloud, etc).  
+  > Edge platforms like NVIDIA Jetson are examples, not requirements.
+
+---
+
+## 🔹 Whitepaper
+See the full whitepaper: [Universal AGI with ADNA Combined.pdf](./Universal%20AGI%20with%20ADNA%20Combined.pdf)
+
+---
+
+## 🔹 Developer Quickstart
+For a developer-focused guide, see [README.dev.md](./README.dev.md).
+
+Basic usage:
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r node/requirements.txt
+
+# Run local devnet
+python node/devnet.py
+
+# Run a mock agent
+python node/agent.py --model tiny-llm --task benchmark/mnist.json --offline
